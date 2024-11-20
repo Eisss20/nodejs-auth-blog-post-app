@@ -67,7 +67,7 @@ authRouter.post("/login", async (req, res) => {
         firstName: userLogin.firstName,
         lastName: userLogin.lastName,
       },
-      process.env.SECRET_KEY,
+      process.env.SECRET_KEY, 
       {
         expiresIn: "15m", 
       }
